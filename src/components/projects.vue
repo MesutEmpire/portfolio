@@ -1,11 +1,11 @@
 <template>
   <div class="flex justify-between mt-32">
     <div>
-      <h2 class="inline before:content-['#'] before:text-primary text-3xl">
+      <h2
+        class="inline before:content-['#'] before:text-primary text-3xl stroke after:translate-x-[10rem]"
+      >
         projects
       </h2>
-
-      <img class="w-40 inline ml-3" src="@/assets/images/stroke.png" />
     </div>
     <div>
       <a

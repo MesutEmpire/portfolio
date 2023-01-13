@@ -7,6 +7,7 @@
       <div><skills></skills></div>
       <div><about></about></div>
       <div><contacts></contacts></div>
+      <div><footerComponent></footerComponent></div>
     </div>
   </div>
 </template>
@@ -17,4 +18,5 @@ import projects from "@/components/projects.vue";
 import skills from "@/components/skills.vue";
 import about from "@/components/about.vue";
 import contacts from "@/components/contacts.vue";
+import footerComponent from "@/components/footerComponent.vue";
 </script>

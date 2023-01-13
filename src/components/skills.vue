@@ -1,27 +1,86 @@
 <template>
-  <div class="flex items-center gap-8 justify-between mt-32">
-    <div>
-      <h2 class="inline before:content-['#'] before:text-primary text-3xl">
-        skills
-      </h2>
-      <img src="@/assets/images/skills.png" class="max-w-sm" />
-    </div>
-
-    <div class="flex flex-col mt-10 mb-8 gap 4">
-      <p class="text-gray">
-        I’m a self-taught front-end developer based in Kyiv, Ukraine. I can
-        develop responsive websites from scratch and raise them into modern
-        user-friendly web experiences.
-      </p>
-      <p class="text-gray">
-        Transforming my creativity and knowledge into a websites has been my
-        passion for over a year. I have been helping various clients to
-        establish their presence online. I always strive to learn about the
-        newest technologies and frameworks.
-      </p>
-    </div>
-    <a href="/about-me" class="border border-primary py-2 px-4 my-8"
-      >View all -&gt;</a
+  <div class="w-full mt-32">
+    <h2
+      class="text-3xl font-medium relative inline-block float-none clear-both before:content-['#'] before:text-primary stroke after:translate-x-3/4"
     >
+      skills
+    </h2>
+    <div class="flex gap-8 flex-wrap">
+      <div class="grow shrink basis-0 relative min-w-min min-h-min">
+        <img
+          src="@/assets/images/logo-outline.svg"
+          alt=""
+          class="absolute left-44 top-28 w-24"
+        />
+        <IconSkill></IconSkill>
+      </div>
+      <div class="gap-4 columns-3 columns-auto md:columns-2 sm:columns-1">
+        <div
+          class="w-full mb-4 grow shrink basis-0 border border-gray min-w-min max-w-[230px]"
+        >
+          <div class="font-semibold p-2 border border-gray">Languages</div>
+          <ul
+            class="p-2 flex flex-wrap gap-2 items-start justify-start text-gray"
+          >
+            <li>TypeScript</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+          </ul>
+        </div>
+
+        <div
+          class="mb-4 grow shrink basis-0 border border-gray min-w-min max-w-[230px]"
+        >
+          <div class="font-semibold p-2 border border-gray">Databases</div>
+          <ul
+            class="p-2 flex flex-wrap gap-2 items-start justify-start text-gray"
+          >
+            <li>SQLite</li>
+            <li>MongoDB</li>
+            <li>PostgreSQL</li>
+          </ul>
+        </div>
+
+        <div
+          class="mb-4 grow shrink basis-0 border border-gray min-w-min max-w-[230px]"
+        >
+          <div class="font-semibold p-2 border border-gray">Other</div>
+          <ul
+            class="p-2 flex flex-wrap gap-2 items-start justify-start text-gray"
+          >
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SASS</li>
+            <li>SCSS</li>
+            <li>EJS</li>
+            <li>Jinja2</li>
+            <li>Node.js</li>
+            <li>Less</li>
+            <li>Pug</li>
+          </ul>
+        </div>
+
+        <div
+          class="mb-4 grow shrink basis-0 border border-gray min-w-min max-w-[230px]"
+        >
+          <div class="font-semibold p-2 border border-gray">Frameworks</div>
+          <ul
+            class="p-2 flex flex-wrap gap-2 items-start justify-start text-gray"
+          >
+            <li>React</li>
+            <li>Vue</li>
+            <li>Disnake</li>
+            <li>Discord.js</li>
+            <li>Flask</li>
+            <li>Quart</li>
+            <li>Express</li>
+            <li>Gulp</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
+<script setup lang="ts">
+import IconSkill from "./icons/IconSkill.vue";
+</script>

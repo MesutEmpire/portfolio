@@ -1,9 +1,12 @@
 <template>
   <div class="flex items-center gap-8 justify-between mt-32">
     <div>
-      <h2 class="inline before:content-['#'] before:text-primary text-3xl">
-        about
-      </h2>
+      <div>
+        <h2 class="inline before:content-['#'] before:text-primary text-3xl stroke after:translate-x-[8rem]">
+          about
+        </h2>
+          </div>
+
       <div class="flex flex-col mt-10 mb-8 gap 4">
         <p class="text-gray">
           I’m a self-taught front-end developer based in Kyiv, Ukraine. I can

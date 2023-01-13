@@ -1,18 +1,17 @@
 <template>
   <div class="flex items-center gap-8 justify-between mt-32">
     <div>
-      <h2 class="inline before:content-['#'] before:text-primary text-3xl">
+    <div>
+      <h2 class="inline before:content-['#'] before:text-primary text-3xl stroke after:translate-x-[9rem]">
         contact
       </h2>
+    </div>
       <div class="flex flex-col mt-10 mb-8 gap 4">
         <p class="text-gray">
           I’m interested in freelance opportunities. However, if you have other
           request or question, don’t hesitate to contact me
         </p>
       </div>
-      <a href="/about-me" class="border border-primary py-2 px-4 my-8"
-        >View all -&gt;</a
-      >
     </div>
     <div class="border border-gray p-4">
       <h3 class="font-semibold">Message me here</h3>
