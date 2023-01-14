@@ -9,6 +9,12 @@
   .dropdown_label {
     @apply after:content-['v'] after:inline-block after:font-medium after:ml-1 after:scale-x-100 after:scale-y-0;
   }
+  .before_check {
+    @apply before:content-[''] before:w-full before:h-0.5 before:absolute before:bg-gray before:top-28 before:transition-all before:duration-[200ms]
+  }
+  .after_check {
+    @apply after:w-3/4 after:top-3/4 after:right-0
+  }
   /* .dot {
     @apply flex first:absolute first:left-40 first:top-20 first:w-9:;
   } */

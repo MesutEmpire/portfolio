@@ -1,7 +1,7 @@
 <template>
   <svg
     width="100%"
-    class="h-auto w-12 absolute left-28 top-12"
+    class="h-auto w-12 absolute left-28 top-12 fill-gray"
     viewBox="0 0 80 80"
   >
     <circle class="bg-gray" cx="4" cy="4" r="4"></circle>
@@ -24,7 +24,7 @@
 
   <svg
     width="100%"
-    class="h-auto w-40 absolute left-1 top-64"
+    class="h-auto w-40 absolute left-1 top-64 fill-gray"
     viewBox="0 0 128 128"
   >
     <circle cx="4" cy="4" r="4"></circle>
