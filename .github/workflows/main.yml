@@ -1,13 +1,13 @@
 name: Build and GH-Page Deploy
 
 on:
-  push:
+  release:
+    types: [published]
     branches:
       - main
 
 permissions:
   contents: write
-
 
 jobs:
   build:
@@ -21,7 +21,7 @@ jobs:
 
       - name: Use Node.js
         uses: actions/setup-node@v3
-        with: 
+        with:
           node-version: 19.x
 
       - name: Install
@@ -31,7 +31,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GH Page
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@4.4.1
         with:
           branch: gh-pages
           folder: dist

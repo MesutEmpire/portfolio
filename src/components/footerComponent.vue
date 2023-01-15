@@ -52,7 +52,7 @@
             </div>
           </div>
         </div>
-        <div class="text-gray text-center">© Copyright 2022. Made by Elias</div>
+        <div class="text-gray text-center">© Copyright 2023. Made by Elias</div>
       </div>
     </div>
   </div>
