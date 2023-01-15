@@ -1,0 +1,1 @@
+import{d as e,o as s,c as t,b as a,a as o,e as c}from"./index-9a6a0d7a.js";const r={class:"max-w-5xl p-4 lg:p-0 my-0 mx-auto relative mt-28 flex shrink grow basis-0 flex-col items-center gap-28"},n=o("h2",null,"Project",-1),p=e({__name:"ProjectsView",setup(_){return(l,i)=>(s(),t("div",r,[n,a(c)]))}});export{p as default};
