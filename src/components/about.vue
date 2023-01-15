@@ -9,7 +9,7 @@
 
       <div class="flex flex-col mt-10 mb-8 gap 4">
         <p class="text-gray">
-          I’m a self-taught front-end developer based in Kyiv, Ukraine. I can
+          I’m a self-taught front-end developer based in Nairobi, Kenya. I can
           develop responsive websites from scratch and raise them into modern
           user-friendly web experiences.
         </p>

@@ -21,15 +21,15 @@
           href="https://discord.com/users/914240860101681163"
         >
           <img src="@/assets/icons/discord.svg" alt="" />
-          <div class="inline-block align-baseline">!Elias#3519</div>
+          <div class="inline-block align-baseline">!Sam#3519</div>
         </a>
 
         <a
           class="flex items-center text-gray mt-2 gap-2"
-          href="mailto:elias@elias-dev.ml"
+          href="mailto:mesutsanchez00@gmail.com"
         >
           <img src="@/assets/icons/email.svg" alt="" />
-          <div class="inline-block align-baseline">elias@elias-dev.ml</div>
+          <div class="inline-block align-baseline">sam@sam-dev.ml</div>
         </a>
       </div>
     </div>
