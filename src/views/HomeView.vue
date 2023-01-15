@@ -1,6 +1,6 @@
 <template>
 <navbar></navbar>
-  <div class="max-w-5xl m-auto relative mt-28 flex shrink grow basis-0 flex-col items-center gap-28">
+  <div class="max-w-5xl p-4 lg:p-0 my-0 mx-auto relative mt-28 flex shrink grow basis-0 flex-col items-center gap-28">
     <hero></hero>
     <quotes></quotes>
     <projects></projects>
