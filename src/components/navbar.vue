@@ -31,22 +31,22 @@
          <span class="font-bold">Elias</span>
        </a>
        <div class="hidden ml-auto md:flex items-start gap-8 text-gray">
-         <a
-             href="/"
+         <router-link
+             to="/"
              class="before:content-['#'] before:text-primary active:text-white active:font-semibold"
-         >home</a
+         >home</router-link
          >
 
-         <a
-             href="/projects"
+         <router-link
+             to="/projects"
              class="before:content-['#'] before:text-primary active:text-white active:font-semibold"
-         >projects</a
+         >projects</router-link
          >
 
-         <a
-             href="/about-me"
+         <router-link
+             to="/about-me"
              class="before:content-['#'] before:text-primary active:text-white active:font-semibold"
-         >about-me</a
+         >about-me</router-link
          >
        </div>
        <div class="hidden md:flex relative text-gray">
