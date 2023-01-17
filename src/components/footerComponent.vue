@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-32">
-    <div class="pt-8 mb-4 border-t border-gray gap-28 w-full">
+
+    <div class=" px-4 md:px-0 pt-8 mb-4 border-t border-gray gap-28 w-full">
       <div class="container mx-auto my-0 lg:p-4">
         <div class="flex justify-between flex-wrap gap-8 mb-12">
           <div>
@@ -11,10 +11,10 @@
                   alt="logo"
                   class="w-4 aspect-square"
                 />
-                <div class="font-bold">Elias</div>
+                <div class="font-bold">Sam</div>
               </div>
-              <a class="text-gray" href="mailto:elias@elias-dev.ml"
-                >elias@elias-dev.ml</a
+              <a class="text-gray" href="mailto:sam@sam-dev.ml"
+                >sam@sam-dev.ml</a
               >
             </div>
 
@@ -55,5 +55,5 @@
         <div class="text-gray text-center">© Copyright 2023. Made by Sam</div>
       </div>
     </div>
-  </div>
+
 </template>

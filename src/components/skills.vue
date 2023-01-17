@@ -6,7 +6,7 @@
       skills
     </h2>
     <div class="flex gap-8 flex-wrap">
-      <div class="grow shrink basis-0 relative min-w-min min-h-min">
+      <div class="hidden sm:flex grow shrink basis-0 relative min-w-min min-h-min">
         <img
           src="@/assets/images/logo-outline.svg"
           alt=""
@@ -14,7 +14,7 @@
         />
         <IconSkill></IconSkill>
       </div>
-      <div class="gap-4 columns-3 columns-auto md:columns-2 sm:columns-1">
+      <div class="flex flex-wrap sm:block gap-4 columns-3 columns-auto md:columns-2 sm:columns-1">
         <div
           class="w-full mb-4 grow shrink basis-0 border border-gray min-w-min max-w-[230px]"
         >

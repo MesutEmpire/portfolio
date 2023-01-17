@@ -13,7 +13,7 @@
       >
     </div>
 
-    <div class="w-full grid gap-4 items-start mt-12 md:grid-cols-3">
+    <div class="w-full grid gap-4 items-start mt-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
       <div class="border border-gray">
         <img
           src="@/assets/images/portfolio.jpg"

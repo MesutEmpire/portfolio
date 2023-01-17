@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center gap-8 justify-between mt-32">
+  <div class="block sm:flex sm:items-center gap-8 sm:justify-between mt-32">
     <div>
       <div>
         <h2 class="inline before:content-['#'] before:text-primary text-3xl stroke after:translate-x-[8rem]">
