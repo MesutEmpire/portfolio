@@ -1,7 +1,7 @@
 <template>
-  <div class="pt-4 md:pt-8 pb-2 bg-background fixed top-0 w-full z-[999]">
+  <div class=" t-4 md:pt-8 pb-2 bg-background fixed top-0 w-full z-[999]">
     <input
-      class="before_check block w-8 m-0 aspect-square md:hidden appearance-none absolute cursor-pointer right-2 top-8 z-[9999] after_check"
+      class="before_check  block w-8 m-0 aspect-square md:hidden appearance-none absolute cursor-pointer right-2 top-8 z-[9999] after_check before_checked after_checked"
       type="checkbox"
       aria-label="Menu"
     />
@@ -47,40 +47,50 @@
           />
           <span class="font-bold">Sam</span>
         </a>
-        <div class="hidden ml-auto md:flex items-start gap-8 text-gray">
+        <div class="checked:flex hidden ml-auto md:flex items-start gap-8 text-gray">
           <router-link
             to="/"
-            class="before:content-['#'] before:text-primary active:text-white active:font-semibold"
+            class="before:content-['#'] before:text-primary active:text-white active:font-semibold  active:text-white hover:text-white"
             >home</router-link
           >
 
           <router-link
             to="/projects"
-            class="before:content-['#'] before:text-primary active:text-white active:font-semibold"
+            class="before:content-['#'] before:text-primary active:text-white active:font-semibold active:text-white hover:text-white"
             >projects</router-link
           >
 
           <router-link
             to="/about-me"
-            class="before:content-['#'] before:text-primary active:text-white active:font-semibold"
+            class="before:content-['#'] before:text-primary active:text-white active:font-semibold  active:text-white hover:text-white"
             >about-me</router-link
+
           >
         </div>
-        <div class="hidden md:flex relative text-gray">
+        <div class="group hidden md:flex relative text-gray">
           <span
-            class="cursor-pointer uppercase after:content-['v'] after:lowercase after:inline-block after:font-medium after:ml-1 after:scale-100"
+            class="hover:text-white cursor-pointer uppercase after:content-['V'] after:inline-block after:font-medium after:ml-1 after:scale-y-[0.5] after:scale-x-100 "
             >en</span
           >
           <div
-            class="hidden flex-col border border-gray absolute bg-background bottom-0 translate-y-full"
+            class=" group-hover:flex hidden flex-col border border-gray absolute bg-background bottom-0 translate-y-full"
           >
-            <div class="cursor-pointer uppercase p-2">ru</div>
-            <div class="cursor-pointer uppercase p-2">ua</div>
+            <div class="hover:text-white cursor-pointer uppercase p-2">ru</div>
+            <div class="hover:text-white cursor-pointer uppercase p-2">ua</div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import {useRoute, useRouter} from "vue-router";
+import {watchEffect} from "vue";
+const {path} = useRoute()
+const {currentRoute} = useRouter()
+console.log(window.location.pathname)
+console.log(path)
+console.log(currentRoute)
+
+</script>
 <style scoped></style>
