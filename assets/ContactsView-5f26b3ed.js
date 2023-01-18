@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as s,a as o}from"./index-b5c189be.js";const c={},a={class:"max-w-5xl p-4 lg:p-0 my-0 mx-auto relative mt-28 flex shrink grow basis-0 flex-col items-center gap-28"},n=o("h2",null,"Contact",-1),r=[n];function _(l,i){return t(),s("div",a,r)}const d=e(c,[["render",_]]);export{d as default};
