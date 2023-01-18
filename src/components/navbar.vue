@@ -52,18 +52,21 @@
           <router-link
             to="/"
             class="before:content-['#'] before:text-primary active:text-white active:font-semibold  active:text-white hover:text-white"
+            @click="showNavbar=false"
             >home</router-link
           >
 
           <router-link
             to="/projects"
             class="before:content-['#'] before:text-primary active:text-white active:font-semibold active:text-white hover:text-white"
+            @click="showNavbar=false"
             >projects</router-link
           >
 
           <router-link
             to="/about-me"
             class="before:content-['#'] before:text-primary active:text-white active:font-semibold  active:text-white hover:text-white"
+            @click="showNavbar=false"
             >about-me</router-link
 
           >

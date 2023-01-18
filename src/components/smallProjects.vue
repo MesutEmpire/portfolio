@@ -4,7 +4,7 @@
     <div class="w-full grid gap-4 items-start mt-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
 
       <div class="border border-gray">
-        <img src="/images/projects/blog.jpg" alt="" class="border-b aspect-video">
+        <img src="@/assets/images/portfolio.jpg" alt="" class="border-b aspect-video">
 
         <ul class="flex flex-wrap gap-y-2 gap-x-4 text-gray p-2 border-b border-gray">
           <li >Vue</li><li >SCSS</li>
