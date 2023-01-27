@@ -13,7 +13,7 @@
                 />
                 <div class="font-bold">Sam</div>
               </div>
-              <a class="text-gray" href="mailto:sam@sam-dev.ml"
+              <a class="text-gray" :href="store.getContactData.email"
                 >sam@sam-dev.ml</a
               >
             </div>
@@ -25,14 +25,14 @@
           <div>
             <div class="font-medium text-2xl">Media</div>
             <div class="flex gap-2">
-              <a href="https://figma.com/@elias_dev" class="w-8 aspect-square">
+              <a :href="store.getContactData.figma" class="w-8 aspect-square">
                 <img
                   src="@/assets/icons/figma.svg"
                   alt="figma"
                   class="w-full aspect-square"
                 />
               </a>
-              <a href="https://github.com/EliasDevis" class="w-8 aspect-square">
+              <a :href="store.getContactData.github" class="w-8 aspect-square">
                 <img
                   src="@/assets/icons/github.svg"
                   alt="github"
@@ -40,7 +40,7 @@
                 />
               </a>
               <a
-                href="https://discord.com/users/914240860101681163"
+                :href="store.getContactData.discord"
                 class="w-8 aspect-square"
               >
                 <img
@@ -57,3 +57,7 @@
     </div>
 
 </template>
+<script setup lang="ts">
+import {useStore} from "@/stores/dataStore";
+const store = useStore()
+</script>

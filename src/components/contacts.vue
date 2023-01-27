@@ -26,7 +26,7 @@
 
         <a
           class="flex items-center text-gray mt-2 gap-2"
-          href="mailto:mesutsanchez00@gmail.com"
+          :href='store.getContactData.email'
         >
           <img src="@/assets/icons/email.svg" alt="" />
           <div class="inline-block align-baseline">sam@sam-dev.ml</div>
@@ -35,3 +35,7 @@
     </div>
   </div>
 </template>
+<script setup lang="ts">
+import {useStore} from "@/stores/dataStore";
+const store = useStore()
+</script>

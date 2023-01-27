@@ -12,7 +12,7 @@
       <span class="w-px h-[33vh] bg-gray" :class="{'hidden':showNavbar,'block':!showNavbar}"></span>
       <div class="auto-cols-fr" :class="{'flex gap-4':showNavbar,'grid':!showNavbar}">
         <a
-          href="https://discord.com/users/914240860101681163"
+          :href='store.getContactData.discord'
           class=" aspect-square"  :class="{'w-12':showNavbar,'w-8':!showNavbar}"
         >
           <img
@@ -21,14 +21,14 @@
             class="w-full aspect-square"
           />
         </a>
-        <a href="https://github.com/EliasDevis" class="w-8 aspect-square" :class="{'w-12':showNavbar,'w-8':!showNavbar}">
+        <a :href="store.getContactData.github" class="w-8 aspect-square" :class="{'w-12':showNavbar,'w-8':!showNavbar}">
           <img
             src="@/assets/icons/github.svg"
             alt="github"
             class="w-full aspect-square"
           />
         </a>
-        <a href="mailto:elias@elias-dev.ml" class=" aspect-square" :class="{'w-12':showNavbar,'w-8':!showNavbar}">
+        <a :href='store.getContactData.email' class=" aspect-square" :class="{'w-12':showNavbar,'w-8':!showNavbar}">
           <img
             src="@/assets/icons/email.svg"
             alt="email"
@@ -90,18 +90,17 @@
 <script setup lang="ts">
 import {useRoute, useRouter} from "vue-router";
 import {reactive, ref, watchEffect} from "vue";
+import {useStore} from "@/stores/dataStore";
+const store = useStore()
 const {path} = useRoute()
-const {currentRoute} = useRouter()
-console.log(window.location.pathname)
-console.log(path)
-console.log(currentRoute)
 const showNavbar = ref()
-const errorClass = ref()
 
 
 watchEffect(()=>{
   console.log(showNavbar.value)
 })
+
+
 
 
 
