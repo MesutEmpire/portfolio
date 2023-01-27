@@ -4,7 +4,7 @@
     <div class="grow shrink basis-0">
       <h1 class="text-[32px] font-semibold min-w-[300px]">Sam is a <span>web designer</span> and <span>front-end</span> developer</h1>
       <div class="text-gray mt-8 mb-8">He crafts responsive websites where technologies meet creativity</div>
-      <a class="inline-block py-2 px-4 border border-primary font-medium" href="/contacts">Contact ME ##</a>
+      <RouterLink class="inline-block py-2 px-4 border border-primary font-medium" to="/about-me">Contact ME ##</RouterLink>
     </div>
     <div class="relative flex flex-col grow shrink basis-0">
       <img src="@/assets/images/logo-outline.svg" alt="" class="absolute w-[30vmin] top-[10%] z-[1] aspect-square " >

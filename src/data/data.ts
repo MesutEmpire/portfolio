@@ -4,8 +4,8 @@
 export const contactData = {
   "email" : "mailto:samwainaina01@gmail.com",
   "github" : "https://github.com/MesutEmpire",
-  "discord" : "https://github.com/MesutEmpire",
-  "figma" : "https://github.com/MesutEmpire"
+  "discord" : "http://discordapp.com/users/1034783062678048828",
+  "figma" : "https://www.figma.com/"
 
 }
 export const factsData = {

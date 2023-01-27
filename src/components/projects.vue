@@ -2,7 +2,7 @@
   <section class="projects">
     <div class="flex justify-between items-center flex-wrap mb-12">
       <h2
-        class="text-[32px] font-medium relative inline-block clear-both float-none before:content-['#'] before:text-primary stroke after:translate-x-3/4"
+        class="text-[32px] font-medium relative inline-block clear-both float-none before:content-['#'] before:text-primary stroke after:translate-x-[120%]"
       >
         projects
       </h2>

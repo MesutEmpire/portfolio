@@ -14,7 +14,7 @@
                 <div class="font-bold">Sam</div>
               </div>
               <a class="text-gray" :href="store.getContactData.email"
-                >sam@sam-dev.ml</a
+                >sam@dev.io</a
               >
             </div>
 

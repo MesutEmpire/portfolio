@@ -21,7 +21,7 @@
           href="https://discord.com/users/914240860101681163"
         >
           <img src="@/assets/icons/discord.svg" alt="" />
-          <div class="inline-block align-baseline">!Sam#3519</div>
+          <div class="md:inline-block align-baseline hidden">Mesut_Empire</div>
         </a>
 
         <a
@@ -29,7 +29,7 @@
           :href='store.getContactData.email'
         >
           <img src="@/assets/icons/email.svg" alt="" />
-          <div class="inline-block align-baseline">sam@sam-dev.ml</div>
+          <div class="md:inline-block align-baseline hidden">sam@dev.io</div>
         </a>
       </div>
     </div>
