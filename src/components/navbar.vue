@@ -86,7 +86,7 @@
         </div>
 
         <div>
-          <button id="theme-toggle" type="button" @click="store.toggleMode()" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm"
+          <button type="button" @click="store.toggleMode()" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm"
           >
             <IconDarkMode :class="{'hidden':store.getMode === 'dark'}" ></IconDarkMode>
             <IconLightMode :class="{'hidden':store.getMode === 'light'}"></IconLightMode>
@@ -97,8 +97,8 @@
   </div>
 </template>
 <script setup lang="ts">
-import {useRoute, useRouter} from "vue-router";
-import {reactive, ref, watchEffect} from "vue";
+import {useRoute} from "vue-router";
+import {ref, watchEffect} from "vue";
 import {useStore} from "@/stores/dataStore";
 import IconDarkMode from "@/components/icons/IconDarkMode.vue";
 import IconLightMode from "@/components/icons/IconLightMode.vue";
@@ -117,12 +117,6 @@ watchEffect(()=>{
 
 </script>
 <style scoped>
-.activeClass {
-  display: flex;
-}
-.notActiveClass{
-  display: none;
-}
 .mytop{
   top: calc(100% - 16px);
 }
