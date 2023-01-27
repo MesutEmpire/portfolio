@@ -9,7 +9,7 @@
     <div class="relative flex flex-col grow shrink basis-0">
       <img src="@/assets/images/logo-outline.svg" alt="" class="absolute w-[30vmin] top-[10%] z-[1] aspect-square " >
       <img src="@/assets/images/hero-original.png" alt="Elias" class="relative z-[2] border-b border-primary">
-      <div class="p-2 border border-gray text-gray mx-auto my-0 inline-flex justify-center items-center relative top-[-1px] z-[5] gap-2 font-medium before:content-[''] before:inline-block before:aspect-square before:bg-background before:border before:border-primary before:w-4">
+      <div class="p-2 border border-gray text-gray mx-auto my-0 inline-flex justify-center items-center relative top-[-1px] z-[5] gap-2 font-medium before:content-[''] before:inline-block before:aspect-square before:dark:bg-background before:border before:border-primary before:w-4">
         Currently working on
         <a href="https://elias-dev.ml" class="text-white underline-offset-4"> Portfolio</a></div>
       <IconHero></IconHero>

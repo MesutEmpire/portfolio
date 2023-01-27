@@ -8,7 +8,8 @@ export const useStore = defineStore('data', {
     decentProjectsData:decentProjectsData,
     smallProjectsData:smallProjectsData,
     contactData:contactData,
-    factsData:factsData
+    factsData:factsData,
+    mode : ''
 
   }),
   getters: {
@@ -26,11 +27,58 @@ export const useStore = defineStore('data', {
     },
     getFactsData(state){
       return state.factsData.list
+    },
+    getMode(state){
+      return state.mode
     }
   },
   actions: {
-    fetchData(){
-      console.log(this.data)
+    setMode(){
+      if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+          this.mode = 'light'
+          document.documentElement.classList.remove('dark')
+        } else {
+          this.mode = 'dark'
+          document.documentElement.classList.add('dark')
+        }
+        // if NOT set via local storage previously
+      } else {
+        if ( window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          this.mode = 'dark'
+          document.documentElement.classList.add('dark')
+        } else {
+          this.mode = 'light'
+          document.documentElement.classList.remove('dark')
+        }
+      }
+
+    },
+    toggleMode(){
+      // if set via local storage previously
+      if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+          this.mode = 'dark'
+          localStorage.setItem('color-theme', 'dark');
+          document.documentElement.classList.add('dark')
+        } else {
+          this.mode = 'light'
+          localStorage.setItem('color-theme', 'light');
+          document.documentElement.classList.remove('dark')
+        }
+
+        // if NOT set via local storage previously
+      } else {
+        if ( window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          this.mode = 'light'
+          localStorage.setItem('color-theme', 'light');
+          document.documentElement.classList.remove('dark')
+        } else {
+          this.mode = 'dark'
+          localStorage.setItem('color-theme', 'dark');
+          document.documentElement.classList.add('dark')
+        }
+      }
     }
   },
 })

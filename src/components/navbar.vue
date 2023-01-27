@@ -1,8 +1,8 @@
 <template>
-  <div class="t-4 md:pt-8 pb-2 bg-background fixed top-0 w-full z-[999]">
+  <div class="t-4 md:pt-8 pb-2 bg-white dark:bg-background fixed top-0 w-full z-[999]">
     <input
         v-model="showNavbar"
-      class="before_check  block w-8 m-0 aspect-square md:hidden appearance-none absolute cursor-pointer right-2 top-8 z-[9999] after_check before_checked after_checked"
+      class="before_check  block w-8 mt-2 pt-2 aspect-square md:hidden appearance-none absolute cursor-pointer right-2 top-8 z-[9999] after_check before_checked after_checked"
       type="checkbox"
       aria-label="Menu"
     />
@@ -51,21 +51,21 @@
         <div class=" ml-auto md:flex items-start gap-8 text-gray" :class="{'flex absolute flex-col -bottom-8 translate-y-[100%] text-[24px]':showNavbar,'hidden':!showNavbar}">
           <router-link
             to="/"
-            class="before:content-['#'] before:text-primary active:text-white active:font-semibold  active:text-white hover:text-white"
+            class="before:content-['#'] before:text-primary active:text-black active:font-semibold hover:text-black dark:hover:text-white"
             @click="showNavbar=false"
             >home</router-link
           >
 
           <router-link
             to="/projects"
-            class="before:content-['#'] before:text-primary active:text-white active:font-semibold active:text-white hover:text-white"
+            class="before:content-['#'] before:text-primary active:text-black active:font-semibold hover:text-black dark:hover:text-white"
             @click="showNavbar=false"
             >projects</router-link
           >
 
           <router-link
             to="/about-me"
-            class="before:content-['#'] before:text-primary active:text-white active:font-semibold  active:text-white hover:text-white"
+            class="before:content-['#'] before:text-primary active:text-black active:font-semibold  hover:text-black dark:hover:text-white"
             @click="showNavbar=false"
             >about-me</router-link
 
@@ -73,15 +73,24 @@
         </div>
         <div class="group md:flex relative text-gray" :class="{'flex absolute -bottom-4 translate-y-[100%] text-[24px] right-0':showNavbar,'hidden':!showNavbar}">
           <span
-            class="hover:text-white cursor-pointer uppercase after:content-['V'] after:inline-block after:font-medium after:ml-1 after:scale-y-[0.5] after:scale-x-100 "
+            class="hover:text-black dark:hover:text-white cursor-pointer uppercase after:content-['V'] after:inline-block after:font-medium after:ml-1 after:scale-y-[0.5] after:scale-x-100 "
             >en</span
           >
           <div
-            class=" group-hover:flex hidden flex-col border border-gray absolute bg-background bottom-0 translate-y-full"
+            class=" group-hover:flex hidden flex-col border border-gray absolute dark:bg-background bottom-0 translate-y-full"
           >
-            <div class="hover:text-white cursor-pointer uppercase p-2">ru</div>
-            <div class="hover:text-white cursor-pointer uppercase p-2">ua</div>
+            <div class="hover:text-black dark:hover:text-white cursor-pointer uppercase p-2">ru</div>
+            <div class="hover:text-black dark:hover:text-white cursor-pointer uppercase p-2">ua</div>
           </div>
+
+        </div>
+
+        <div>
+          <button id="theme-toggle" type="button" @click="store.toggleMode()" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm"
+          >
+            <IconDarkMode :class="{'hidden':store.getMode === 'dark'}" ></IconDarkMode>
+            <IconLightMode :class="{'hidden':store.getMode === 'light'}"></IconLightMode>
+          </button>
         </div>
       </div>
     </div>
@@ -91,6 +100,8 @@
 import {useRoute, useRouter} from "vue-router";
 import {reactive, ref, watchEffect} from "vue";
 import {useStore} from "@/stores/dataStore";
+import IconDarkMode from "@/components/icons/IconDarkMode.vue";
+import IconLightMode from "@/components/icons/IconLightMode.vue";
 const store = useStore()
 const {path} = useRoute()
 const showNavbar = ref()

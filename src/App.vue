@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen leading-normal overflow-x-hidden flex gap-28 flex-col text-white bg-background"
+    class="min-h-screen leading-normal overflow-x-hidden flex gap-28 flex-col dark:text-white text-black dark:bg-background"
   >
     <navbar></navbar>
     <RouterView />
@@ -11,5 +11,8 @@
 import { RouterLink, RouterView } from "vue-router";
 import Navbar from "@/components/navbar.vue";
 import FooterComponent from "@/components/footerComponent.vue";
+import {useStore} from "@/stores/dataStore";
+const store = useStore()
+store.setMode()
 </script>
 <style scoped></style>
