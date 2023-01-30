@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
+
 module.exports = {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: 'class', // or 'media' or 'class'
@@ -10,6 +11,9 @@ module.exports = {
         gray: "#ABB2BF",
         primary: "#C778DD",
       },
+      fontFamily:{
+        Comfortaa: ['Comfortaa', 'cursive']
+      }
     },
   },
   variants: {

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,22 +12,22 @@
     @apply after:content-['v'] after:inline-block after:font-medium after:ml-1 after:scale-x-100 after:scale-y-0;
   }
   .before_check {
-    @apply before:content-[''] before:w-full before:h-0.5 before:absolute before:bg-gray before:top-[30%] before:transition-all before:duration-[200ms]
+    @apply before:content-[''] before:w-full before:h-0.5 before:absolute before:bg-gray before:top-[30%] before:transition-all before:duration-[200ms];
   }
   .after_check {
-    @apply after:w-3/4 after:top-[70%] after:right-0 after:content-[''] after:h-0.5 after:absolute after:bg-gray after:transition-all after:duration-[200ms]
+    @apply after:w-3/4 after:top-[70%] after:right-0 after:content-[''] after:h-0.5 after:absolute after:bg-gray after:transition-all after:duration-[200ms];
   }
   .button_default {
-    @apply inline-block py-2 px-4 border border-primary font-medium
+    @apply inline-block py-2 px-4 border border-primary font-medium;
   }
   .before_checked {
-    @apply  before:checked:-translate-y-2/4 before:checked:-rotate-45
+    @apply before:checked:-translate-y-2/4 before:checked:-rotate-45;
   }
   .after_checked {
-    @apply after:checked:w-full after:checked:top-[30%] after:checked:-translate-y-2/4 after:checked:rotate-45
+    @apply after:checked:w-full after:checked:top-[30%] after:checked:-translate-y-2/4 after:checked:rotate-45;
   }
   .menu {
-    @apply flex absolute flex-col -bottom-32 -translate-y-full text-[24px]
+    @apply flex absolute flex-col -bottom-32 -translate-y-full text-[24px];
   }
   /* .dot {
     @apply flex first:absolute first:left-40 first:top-20 first:w-9:;

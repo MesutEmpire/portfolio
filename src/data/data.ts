@@ -1,156 +1,130 @@
 // new data
 
-
 export const contactData = {
-  "email" : "mailto:samwainaina01@gmail.com",
-  "github" : "https://github.com/MesutEmpire",
-  "discord" : "http://discordapp.com/users/1034783062678048828",
-  "figma" : "https://www.figma.com/"
-
-}
+  email: "mailto:samwainaina01@gmail.com",
+  github: "https://github.com/MesutEmpire",
+  discord: "http://discordapp.com/users/1034783062678048828",
+  figma: "https://www.figma.com/",
+};
 export const factsData = {
-    "list": [
-      "I like winter more than summer",
-      "I often bike with my friends",
-      "I like pizza and pasta",
-      "I was in Egypt, Poland and Turkey",
-      "I’m still studing in school",
-      "My favorite movie is The Green Mile"
-    ]
-  }
-export const projectData = {
-  "chertnodes": {
-       "name": "ChertNodes",
-      "description": "Minecraft servers hosting",
-    "technologies":["Flask","Python","SCSS"],
-    "url": {
-         "img":"./src/assets/images/portfolio.jpg",
-      "live":"https://chernodes.ru",
-      "figma":"https://figma.com/community/file/1149829028455305659"
-    }
-},
-  "protectx": {
-    "name": "ProtectX web",
-    "description": "Discord anti-crash bot",
-    "technologies":["Express","Node.js","React","RTK","Discord.js"],
-    "url": {
-      "img":"./src/assets/images/portfolio.jpg",
-      "live":"https://isecurity-protectx.tk",
-      "figma":"https://figma.com/community/file/1168662007492356291"
-    }
-  },
-  "khanswers": {
-    "name": "Kahoot Answers",
-    "description": "Get answers from kahoot quiz",
-    "technologies":["Express","Node.js","EJS"],
-    "url": {
-      "img":"./src/assets/images/portfolio.jpg",
-      "live":"https://khanswers.vercel.app",
-      "figma":"https://github.com/EliasDevis/kahoot-answers"
-    }
-  },
-}
+  list: [
+    "I like winter more than summer",
+    "I often bike with my friends",
+    "I like pizza and pasta",
+    "I was in Egypt, Poland and Turkey",
+    "I’m still studing in school",
+    "My favorite movie is The Green Mile",
+  ],
+};
 export const decentProjectsData = {
-  "chertnodes": {
-    "name": "ChertNodes",
-    "description": "Minecraft servers hosting",
-    "technologies":["Flask","Python","SCSS"],
-    "url": {
-      "img":"./src/assets/images/portfolio.jpg",
-      "live":"https://chernodes.ru",
-      "figma":"https://figma.com/community/file/1149829028455305659"
-    }
+  portfolio: {
+    name: "My Portfolio",
+    description: "Front-end of portfolio containg all my projects",
+    technologies: ["Vue", "Tailwind", "Pinia"],
+    level: "decent",
+    url: {
+      img: "./src/assets/images/portfolioLight.png",
+      live: "https://mesutempire.github.io/portfolio/",
+      github: "https://github.com/MesutEmpire/portfolio",
+    },
   },
-  "protectx": {
-    "name": "ProtectX web",
-    "description": "Discord anti-crash bot",
-    "technologies":["Express","Node.js","React","RTK","Discord.js"],
-    "url": {
-      "img":"./src/assets/images/portfolio.jpg",
-      "live":"https://isecurity-protectx.tk",
-      "figma":"https://figma.com/community/file/1168662007492356291"
-    }
+  eCart: {
+    name: "e-Cart",
+    description: "An E-commerce website",
+    technologies: [
+      "Vue",
+      "Tailwind",
+      "Pinia",
+      "Node",
+      "Express.js",
+      "MongoDB",
+      "Docker",
+    ],
+    level: "decent",
+    url: {
+      img: "./src/assets/images/portfolio.jpg",
+      live: "",
+      github: "https://github.com/MesutEmpire/e-Cart-FullStack",
+    },
   },
-  "khanswers": {
-    "name": "Kahoot Answers",
-    "description": "Get answers from kahoot quiz",
-    "technologies":["Express","Node.js","EJS"],
-    "url": {
-      "img":"./src/assets/images/portfolio.jpg",
-      "live":"https://khanswers.vercel.app",
-      "figma":"https://github.com/EliasDevis/kahoot-answers"
-    }
+  foodpalace: {
+    name: "Food Palace",
+    description: "Online restaurant for food ordering and delivery",
+    technologies: [
+      "Vue",
+      "Tailwind",
+      "Pinia",
+      "Node",
+      "Express.js",
+      "Firestore",
+      "Firebase",
+    ],
+    level: "decent",
+    url: {
+      img: "./src/assets/images/foodpalace.png",
+      live: "https://food-palace-4e993.web.app/#/",
+      github: "https://github.com/MesutEmpire/food-palace",
+    },
   },
-  "kotikbot": {
-    "name": "KotikBot",
-    "description": "Landing for multi-funtional cute discord bot",
-    "technologies":["HTML","CSS","JavaScript"],
-    "url": {
-      "img":"./src/assets/images/portfolio.jpg",
-      "live":"https://kotikbot.github.io",
-      "figma":"https://github.com/kotikbot/kotikbot.github.io"
-    }
+  discordbot: {
+    name: "Discord-GPT Bot",
+    description: "Bot that intergrates the GPT-3 and discord.js",
+    technologies: ["Node.js", "TypeScript", "Express.js"],
+    level: "small",
+    url: {
+      img: "",
+      live: "",
+      github: "https://github.com/MesutEmpire/ChatGPT-Discord",
+    },
   },
-  "portfolio": {
-    "name": "This Portfolio",
-    "description": "My personal portfolio",
-    "technologies":["SASS","HTML","JavaScript"],
-    "url": {
-      "img":"./src/assets/images/portfolio.jpg",
-      "live":"https://khanswers.vercel.app",
-      "figma":"https://github.com/EliasDevis/kahoot-answers"
-    }
+  whatsappbot: {
+    name: "Whatsapp-GPT Bot",
+    description: "Bot that intergrates the GPT-3 and Whatsapp Meta Api",
+    technologies: ["Node.js", "TypeScript", "Express.js"],
+    level: "small",
+    url: {
+      img: "",
+      live: "",
+      github: "https://github.com/MesutEmpire/OpenAI-Whatsapp",
+    },
   },
-  "madhost": {
-    "name": "MadHost",
-    "description": "Minecraft and websites hosting with low prices",
-    "technologies":["Pug","Less","Gulp","Node.js"],
-    "url": {
-      "img":"./src/assets/images/portfolio.jpg",
-      "live":"https://khanswers.vercel.app",
-      "figma":"https://github.com/EliasDevis/kahoot-answers"
-    }
-  }
-}
-export const smallProjectsData = {
-  "blog": {
-    "name": "My blog",
-    "description": "Front-end of my future blog website",
-    "technologies":["Express","Node.js","EJS"],
-    "url": {
-      "img":"./src/assets/images/portfolio.jpg",
-      "live":"https://khanswers.vercel.app",
-      "figma":"https://github.com/EliasDevis/kahoot-answers"
-    }
+  hospital: {
+    name: "Hospital",
+    description:
+      "Record for programs regarding indoor patients that includes the Name of the patient, age of the patient, Disease, Date of admission and date of discharge.",
+    technologies: ["Java"],
+    level: "small",
+    url: {
+      img: "",
+      live: "",
+      github: "https://github.com/MesutEmpire/Hospital",
+    },
   },
-  "discordbot": {
-    "name": "Discord Bot Boilerplate",
-    "description": "Start creating scalable discord.js bot with typescript in seconds",
-    "technologies":["Node.js","TypeScript"],
-    "url": {
-      "img":"",
-      "live":"https://khanswers.vercel.app",
-      "figma":"https://github.com/EliasDevis/kahoot-answers"
-    }
+};
+
+export const skillsData = {
+  languages: {
+    category: "Languages",
+    technologies: [
+      "Typescript",
+      "JavaScript",
+      "Java",
+      "C",
+      "C++",
+      "Python",
+      "Node js",
+    ],
   },
-  "chesspro": {
-    "name": "Chess PRO",
-    "description": "Landing page about service for viewing chess tournaments",
-    "technologies":["Figma"],
-    "url": {
-      "img":"",
-      "live":"https://khanswers.vercel.app",
-      "figma":"https://github.com/EliasDevis/kahoot-answers"
-    }
+  database: {
+    category: "Database",
+    technologies: ["MySQL", "MongoDB", "FireStore", "MSSQL"],
   },
-  "ooku": {
-    "name": "Ooku",
-    "description": "Link shortener with discord auth",
-    "technologies":["Python","Flask"],
-    "url": {
-      "img":"",
-      "live":"https://khanswers.vercel.app",
-      "figma":"https://github.com/EliasDevis/kahoot-answers"
-    }
+  other: {
+    category: "Other",
+    technologies: ["HTML", "CSS", "SCSS"],
   },
-}
+  frameworks: {
+    category: "Frameworks",
+    technologies: ["Vue", "Angular", "Express"],
+  },
+};
