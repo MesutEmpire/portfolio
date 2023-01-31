@@ -2,7 +2,7 @@ name: Build and GH-Page Deploy
 
 on:
   release:
-    types: [published]
+    types: [published,edited]
     branches:
       - main
 
