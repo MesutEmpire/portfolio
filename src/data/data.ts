@@ -12,7 +12,7 @@ export const factsData = {
     "I often bike with my friends",
     "I like pizza and pasta",
     "I was in Egypt, Poland and Turkey",
-    "I’m still studing in school",
+    "I’m still studing in school here",
     "My favorite movie is The Green Mile",
   ],
 };
