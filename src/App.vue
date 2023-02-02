@@ -8,7 +8,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
+import {RouterView } from "vue-router";
 import Navbar from "@/components/navbar.vue";
 import FooterComponent from "@/components/footerComponent.vue";
 import { useStore } from "@/stores/dataStore";
