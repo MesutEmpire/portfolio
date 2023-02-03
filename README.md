@@ -1,6 +1,6 @@
 # PORTFOLIO
 
-#### My Portfolio , 18 January 2023
+#### My Portfolio , 12 January 2023
 
 #### By **Samuel Wainaina**
 
