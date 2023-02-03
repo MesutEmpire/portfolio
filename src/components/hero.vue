@@ -2,7 +2,7 @@
   <section class="flex flex-wrap gap-8 items-center justify-between">
     <div class="grow shrink basis-0">
       <h1 class="text-[32px] font-semibold min-w-[300px]">
-        Sam is a <span>web designer</span> and <span>front-end</span> developer
+        Sam is a <span>web designer</span> and <span>full-stack</span> developer
       </h1>
       <div class="text-slate-500 dark:text-gray mt-8 mb-8">
         He crafts responsive websites where technologies meet creativity

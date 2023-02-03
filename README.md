@@ -1,28 +1,21 @@
-# portfolio
+# PORTFOLIO
 
-This template should help get you started developing with Vue 3 in Vite.
+#### My Portfolio , 18 January 2023
 
-## Recommended IDE Setup
+#### By **Samuel Wainaina**
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Description
 
-## Type Support for `.vue` Imports in TS
+This is my portfolio website that contains my projects and info.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Setup/Installation Requirements
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
+- Go to your terminal
+- Create a new folder called (Portfolio)
+- Navigate to the folder and run the command : https://github.com/MesutEmpire/portfolio.git
+- Open on preferred code editor
+- Run the following commands : 
+ ### Install the Node Modules
 ```sh
 npm install
 ```
@@ -38,3 +31,29 @@ npm run dev
 ```sh
 npm run build
 ```
+## Live Website
+  [Link to the website](https://mesutempire.github.io/portfolio/)
+
+## Known Bugs
+
+None yet encountered
+
+## Technologies Used
+
+- Vue
+- Tailwind
+- Pinia
+- Typscript
+- HTML
+- CSS
+- Vite
+
+## Support and contact details
+
+Feel free to contact me at [Email](mailto:samwainaina01@gmail.com)
+
+### License
+
+[Licence](https://choosealicense.com/licenses/mit/)
+Copyright (c) 2023 **PORTFOLIO**
+
