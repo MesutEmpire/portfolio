@@ -23,7 +23,7 @@ export const decentProjectsData = {
     technologies: ["Vue", "Tailwind", "Pinia"],
     level: "decent",
     url: {
-      img: "./src/assets/images/portfolioLight.png",
+      img: "portfolioLight.png",
       live: "https://mesutempire.github.io/portfolio/",
       github: "https://github.com/MesutEmpire/portfolio",
     },
@@ -42,7 +42,7 @@ export const decentProjectsData = {
     ],
     level: "decent",
     url: {
-      img: "./src/assets/images/portfolio.jpg",
+      img: "portfolio.jpg",
       live: "",
       github: "https://github.com/MesutEmpire/e-Cart-FullStack",
     },
@@ -61,7 +61,7 @@ export const decentProjectsData = {
     ],
     level: "decent",
     url: {
-      img: "./src/assets/images/foodpalace.png",
+      img: "foodpalace.png",
       live: "https://food-palace-4e993.web.app/#/",
       github: "https://github.com/MesutEmpire/food-palace",
     },
