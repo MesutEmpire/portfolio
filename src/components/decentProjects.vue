@@ -10,7 +10,7 @@
     >
       <div v-for="project in store.getdecentProjectsData">
         <div v-if="project.level === 'decent'" class="border border-gray">
-          <img :src="project.url.img" alt="" class="border-b aspect-video" />
+          <img  v-if="project.url.img !== ''" :src="project.url.img" alt="" class="border-b aspect-video" />
 
           <ul
             class="flex flex-wrap gap-y-2 gap-x-4 text-slate-500 dark:text-gray p-2 border-b border-gray"

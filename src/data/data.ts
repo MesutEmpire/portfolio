@@ -42,7 +42,7 @@ export const decentProjectsData = {
     ],
     level: "decent",
     url: {
-      img: "portfolio.jpg",
+      img: "",
       live: "",
       github: "https://github.com/MesutEmpire/e-Cart-FullStack",
     },

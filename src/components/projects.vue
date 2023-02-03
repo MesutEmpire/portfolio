@@ -17,7 +17,7 @@
       class="w-full grid gap-4 items-start mt-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
     >
       <div v-for="project in store.getData" class="border border-gray">
-        <img
+        <img v-if="project.url.img !== ''"
           :src="project.url.img"
           alt=""
           class="border-b border-gray aspect-video"
