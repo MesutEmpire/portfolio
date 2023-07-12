@@ -29,11 +29,11 @@
       >
         Currently working on
         <a
-          :href="store.getContactData.dev"
+          :href="store.getProjectsData[0].url.live"
           class="text-black dark:text-white underline decoration-2 underline-offset-4 hover:text-primary dark:hover:text-primary
 "
         >
-          Portfolio</a
+          {{store.getProjectsData[0].name}}</a
         >
       </div>
       <IconHero></IconHero>

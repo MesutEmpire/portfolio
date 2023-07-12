@@ -10,7 +10,7 @@
       </div>
       <div class="flex flex-col mt-10 mb-8 gap 4">
         <p class="text-slate-500 dark:text-gray">
-          Thank you for visiting my website. If you are interested in freelance opportunities or have any other requests or questions, please feel free to reach out to me using the contact information provided below. I would be delighted to discuss potential collaborations or answer any inquiries you may have. I appreciate your interest and look forward to connecting with you soon.
+          Thank you for visiting my website. If you have freelance opportunities or have any other requests or questions, please feel free to reach out to me using the contact information provided below. I would be delighted to discuss potential collaborations or answer any inquiries you may have. I appreciate your interest and look forward to connecting with you soon.
         </p>
       </div>
     </div>
