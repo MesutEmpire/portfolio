@@ -2,13 +2,13 @@
   <section class="flex flex-wrap gap-8 items-center justify-between">
     <div class="grow shrink basis-0">
       <h1 class="text-[32px] font-semibold min-w-[300px]">
-        Sam is a <span>web designer</span> and <span>full-stack</span> developer
+        Sam is a <span class="text-primary font-bold">data scientist</span> and <span class="text-primary font-bold">full-stack</span> developer
       </h1>
       <div class="text-slate-500 dark:text-gray mt-8 mb-8">
-        He crafts responsive websites where technologies meet creativity
+        He is a passionate problem solver, blending data science expertise and full-stack development skills to create innovative and impactful solutions.
       </div>
       <RouterLink
-        class="inline-block py-2 px-4 border border-primary font-medium"
+        class="button_default"
         to="/about-me"
         >Contact ME ##</RouterLink
       >
@@ -21,7 +21,7 @@
       />
       <img
         src="@/assets/images/hero-original.png"
-        alt="Elias"
+        alt="Sam"
         class="relative z-[2] border-b border-primary"
       />
       <div
@@ -29,8 +29,9 @@
       >
         Currently working on
         <a
-          href="https://elias-dev.ml"
-          class="text-black dark:text-white underline-offset-4"
+          :href="store.getContactData.dev"
+          class="text-black dark:text-white underline decoration-2 underline-offset-4 hover:text-primary dark:hover:text-primary
+"
         >
           Portfolio</a
         >
@@ -41,6 +42,8 @@
 </template>
 <script setup lang="ts">
 import IconHero from "@/components/icons/IconHero.vue";
+import {useStore} from "@/stores/dataStore";
+const store = useStore();
 </script>
 
 <style scoped></style>

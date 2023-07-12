@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import {
-  decentProjectsData,
+  projectsData,
   contactData,
   factsData,
   skillsData,
@@ -9,31 +9,32 @@ import { state } from "vue-tsc/out/shared";
 
 export const useStore = defineStore("data", {
   state: () => ({
-    decentProjectsData: decentProjectsData,
+    projectsData: projectsData,
     contactData: contactData,
     factsData: factsData,
     mode: "",
     skills: skillsData,
+    logoColor:''
   }),
   getters: {
     getData(state) {
       //Object entries converts the object to an array then slice takes the first 3 elements
       //then reduce converts the array back to an object
-      return Object.entries(state.decentProjectsData)
+      return Object.entries(state.projectsData)
         .slice(0, 3)
         .reduce((obj: any, [key, value]: any) => {
           obj[key] = value;
           return obj;
         }, {});
     },
-    getdecentProjectsData(state) {
-      return state.decentProjectsData;
+    getProjectsData(state) {
+      return state.projectsData;
     },
     getContactData(state) {
       return state.contactData;
     },
     getFactsData(state) {
-      return state.factsData.list;
+      return state.factsData;
     },
     getMode(state) {
       return state.mode;
@@ -41,24 +42,31 @@ export const useStore = defineStore("data", {
     getSkillData(state) {
       return state.skills;
     },
+    getLogoColor(state) {
+      return state.logoColor;
+    }
   },
   actions: {
     setMode() {
       if (localStorage.getItem("color-theme")) {
         if (localStorage.getItem("color-theme") === "light") {
           this.mode = "light";
+          this.logoColor = 'black'
           document.documentElement.classList.remove("dark");
         } else {
           this.mode = "dark";
+          this.logoColor = 'white'
           document.documentElement.classList.add("dark");
         }
         // if NOT set via local storage previously
       } else {
         if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
           this.mode = "dark";
+          this.logoColor = 'white'
           document.documentElement.classList.add("dark");
         } else {
           this.mode = "light";
+          this.logoColor = 'black'
           document.documentElement.classList.remove("dark");
         }
       }
@@ -68,10 +76,12 @@ export const useStore = defineStore("data", {
       if (localStorage.getItem("color-theme")) {
         if (localStorage.getItem("color-theme") === "light") {
           this.mode = "dark";
+          this.logoColor = 'white'
           localStorage.setItem("color-theme", "dark");
           document.documentElement.classList.add("dark");
         } else {
           this.mode = "light";
+            this.logoColor = 'black'
           localStorage.setItem("color-theme", "light");
           document.documentElement.classList.remove("dark");
         }
@@ -80,10 +90,12 @@ export const useStore = defineStore("data", {
       } else {
         if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
           this.mode = "light";
+            this.logoColor = 'black'
           localStorage.setItem("color-theme", "light");
           document.documentElement.classList.remove("dark");
         } else {
           this.mode = "dark";
+            this.logoColor = 'white'
           localStorage.setItem("color-theme", "dark");
           document.documentElement.classList.add("dark");
         }

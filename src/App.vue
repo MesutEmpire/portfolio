@@ -2,9 +2,9 @@
   <div
     class="min-h-screen leading-normal overflow-x-hidden flex gap-28 flex-col dark:text-white text-black dark:bg-background font-Comfortaa"
   >
-    <navbar></navbar>
+    <Navbar/>
     <RouterView />
-    <footer-component></footer-component>
+    <FooterComponent/>
   </div>
 </template>
 <script setup lang="ts">

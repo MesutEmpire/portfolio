@@ -18,7 +18,7 @@
     @apply after:w-3/4 after:top-[70%] after:right-0 after:content-[''] after:h-0.5 after:absolute after:bg-gray after:transition-all after:duration-[200ms];
   }
   .button_default {
-    @apply inline-block py-2 px-4 border border-primary font-medium;
+    @apply inline-block py-2 px-4 border border-primary font-medium transition duration-1000 overflow-hidden hover:text-white before:content-[''] before:absolute before:w-0 before:h-full before:bg-primary before:top-0 before:-left-[40px] before:transition-all before:duration-1000 before:-z-[1] before:skew-x-[45deg] before:hover:w-[180%];
   }
   .before_checked {
     @apply before:checked:-translate-y-2/4 before:checked:-rotate-45;

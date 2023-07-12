@@ -57,6 +57,13 @@
             class="w-full aspect-square"
           />
         </a>
+        <a :href="store.getContactData.linkedin" class=" p-1">
+          <img
+            src="@/assets/icons/linkedin.svg"
+            alt="linkedin"
+            class="w-full aspect-square "
+          />
+        </a>
       </div>
     </div>
 
@@ -69,11 +76,12 @@
         :class="{ 'items-start': showNavbar }"
       >
         <router-link class="flex gap-2" to="/">
-          <img
-            class="w-4 aspect-square"
-            src="@/assets/icons/logo.svg"
-            alt="Elias logo"
-          />
+<!--          <img-->
+<!--            class="w-4 aspect-square"-->
+<!--            src="@/assets/icons/logo.svg"-->
+<!--            alt="Elias logo"-->
+<!--          />-->
+          <IconLogo />
           <span class="font-bold">Sam</span>
         </router-link>
         <div
@@ -157,6 +165,7 @@ import { ref, watchEffect } from "vue";
 import { useStore } from "@/stores/dataStore";
 import IconDarkMode from "@/components/icons/IconDarkMode.vue";
 import IconLightMode from "@/components/icons/IconLightMode.vue";
+import IconLogo from "@/components/icons/IconLogo.vue";
 const store = useStore();
 const { path } = useRoute();
 const showNavbar = ref();

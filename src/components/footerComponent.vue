@@ -15,12 +15,12 @@
             <a
               class="text-slate-500 dark:text-gray"
               :href="store.getContactData.email"
-              >sam@dev.io</a
+              >samwainaina01@gmail.com</a
             >
           </div>
 
           <p class="mt-4">
-            Web designer and front-end developer based in Kenya
+           Data Scientist and Fullstack developer based in Kenya.
           </p>
         </div>
         <div>
