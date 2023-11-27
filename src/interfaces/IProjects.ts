@@ -29,3 +29,7 @@ interface ISubSkills {
     technologies: string[];
 }
 
+export interface IQuote {
+        quote:string,
+        quotedBy:string
+}

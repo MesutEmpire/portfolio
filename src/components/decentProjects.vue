@@ -22,8 +22,8 @@
             <div class="text-2xl font-medium">{{ project.name }}</div>
             <div class="text-color my-4 mx-0 line-clamp-2 group-hover:line-clamp-none">{{ project.description }}</div>
             <div class="flex gap-2">
-              <a :href="project.url.live" class="button_default">Live =&gt;</a
-              ><a :href="project.url.github" class="button_default"
+              <a v-if="project.url.live !== ''" :href="project.url.live"  target="_blank" class="button_default">Live =&gt;</a
+              ><a :href="project.url.github" target="_blank" class="button_default"
                 >Github =&gt;</a
               >
             </div>

@@ -3,7 +3,7 @@ import {
   projectsData,
   contactData,
   factsData,
-  skillsData,
+  skillsData, quotesData,
 } from "@/data/data";
 import { state } from "vue-tsc/out/shared";
 
@@ -14,7 +14,8 @@ export const useStore = defineStore("data", {
     factsData: factsData,
     mode: "",
     skills: skillsData,
-    logoColor:''
+    logoColor:'',
+    quotesData:quotesData
   }),
   getters: {
     getData(state) {
@@ -35,6 +36,11 @@ export const useStore = defineStore("data", {
     },
     getFactsData(state) {
       return state.factsData;
+    },
+    getQuotesData(state) {
+      let randomDecimal = Math.random();
+      let randomInt = Math.floor(randomDecimal * state.quotesData.length);
+      return state.quotesData[randomInt];
     },
     getMode(state) {
       return state.mode;

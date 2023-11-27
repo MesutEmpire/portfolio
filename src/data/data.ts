@@ -1,5 +1,5 @@
 // new data
-import type {IProjects, IContact, ISkills} from "@/interfaces/IProjects";
+import type {IProjects, IContact, ISkills, IQuote} from "@/interfaces/IProjects";
 export const contactData:IContact = {
   email: "mailto:samwainaina01@gmail.com",
   github: "https://github.com/MesutEmpire",
@@ -9,20 +9,21 @@ export const contactData:IContact = {
     linkedin:"https://www.linkedin.com/in/samuel-wainaina01/"
 };
 export const factsData:string[] =
-   [  "I am an Arsenal fan.",
+   [  "I am an diehard Arsenal fan.",
        "I love swimming.",
        "My favorite series is 'The Originals'.",
        "I enjoy watching 'The Flash'.",
   ]
 export const projectsData:IProjects[]= [
     {
-        name: "The Hut",
-        description: "The Hut is a property management system for landlords and tenants. It offers features like rent collection, a tenant complaint section, and rent due notifications. With a focus on improving the housing experience, it simplifies property management tasks and provides valuable insights.",
+        name: "Kazi App",
+        description: "The Kazi App is web application designed to connect service providers with clients. Clients can easily log in to the application, select the service they require, and find a suitable person to perform that service, offering convenience at their fingertips.\n" +
+            "Service providers should be able to create a worker profile to showcase their skills in various industries. These profiles will be shared with clients when their skills are needed.\n",
         technologies: ["React", "Node js", "MongoDB", "Express js", "Redux","Material UI"],
         level: "decent",
         url: {
-            img: "thehut.png",
-            live: "https://thehut-frontend.azurewebsites.net/",
+            img: "",
+            live: "",
             github: "https://github.com/TechXS/TheHut",
         },
     },
@@ -33,8 +34,19 @@ export const projectsData:IProjects[]= [
         level: "decent",
         url: {
             img: "appsecops.png",
-            live: "",
+            live: "https://appsecops.netlify.app/",
             github: "https://github.com/MesutEmpire/AppSecOps-Frontend",
+        },
+    },
+    {
+        name: "The Hut",
+        description: "The Hut is a property management system for landlords and tenants. It offers features like rent collection, a tenant complaint section, and rent due notifications. With a focus on improving the housing experience, it simplifies property management tasks and provides valuable insights.",
+        technologies: ["React", "Node js", "MongoDB", "Express js", "Redux","Material UI"],
+        level: "decent",
+        url: {
+            img: "thehut.png",
+            live: "https://thehut-frontend.azurewebsites.net/",
+            github: "https://github.com/TechXS/TheHut",
         },
     },
     {
@@ -160,3 +172,22 @@ export const skillsData:ISkills = {
     technologies: ["Vue", "Angular", "Express","React"],
   },
 };
+
+export const quotesData:IQuote[] = [
+    {
+        quote:'" It happens, but it need not. "',
+        quotedBy:' Jeff Koinange '
+    },
+    {
+        quote:'" When disaster strikes, fortune favours the prepared."',
+        quotedBy:' Louis Pasteur '
+    },
+    {
+        quote:'" Mastery is process not a state. "',
+        quotedBy:' Catherine Muraga '
+    },
+    {
+        quote:'" Anything that can go wrong will go wrong. "',
+        quotedBy:' Edward A. Murphy Jr.'
+    }
+]

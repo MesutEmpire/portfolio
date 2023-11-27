@@ -20,6 +20,7 @@
         <a
           class="flex items-center text-slate-500 dark:text-gray mt-2 gap-2"
          :href="store.getContactData.discord"
+          target="_blank"
         >
           <img src="@/assets/icons/discord.svg" alt="Discord" />
           <div class="md:inline-block align-baseline">Mesut_Empire</div>
@@ -28,11 +29,12 @@
         <a
           class="flex items-center text-slate-500 dark:text-gray mt-2 gap-2"
           :href="store.getContactData.email"
+          target="_blank"
         >
           <img src="@/assets/icons/email.svg" alt="Email" />
           <div class="md:inline-block align-baseline">MesutEmpire</div>
         </a>
-        <a :href="store.getContactData.linkedin"  class="flex items-center text-slate-500 dark:text-gray mt-2 pl-1.5 gap-2">
+        <a :href="store.getContactData.linkedin"  target="_blank" class="flex items-center text-slate-500 dark:text-gray mt-2 pl-1.5 gap-2">
           <img
               src="@/assets/icons/linkedin.svg"
               alt="linkedin"

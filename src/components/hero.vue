@@ -30,6 +30,7 @@
         Currently working on
         <a
           :href="store.getProjectsData[0].url.live"
+          target="_blank"
           class="text-black dark:text-white underline decoration-2 underline-offset-4 hover:text-primary dark:hover:text-primary
 "
         >

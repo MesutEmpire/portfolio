@@ -26,6 +26,7 @@
       >
         <a
           :href="store.getContactData.discord"
+          target="_blank"
           class="aspect-square"
           :class="{ 'w-12': showNavbar, 'w-8': !showNavbar }"
         >
@@ -37,6 +38,7 @@
         </a>
         <a
           :href="store.getContactData.github"
+          target="_blank"
           class="w-8 aspect-square"
           :class="{ 'w-12': showNavbar, 'w-8': !showNavbar }"
         >
@@ -48,6 +50,7 @@
         </a>
         <a
           :href="store.getContactData.email"
+          target="_blank"
           class="aspect-square"
           :class="{ 'w-12': showNavbar, 'w-8': !showNavbar }"
         >
@@ -57,7 +60,7 @@
             class="w-full aspect-square"
           />
         </a>
-        <a :href="store.getContactData.linkedin" class=" p-1">
+        <a :href="store.getContactData.linkedin" target="_blank" class=" p-1">
           <img
             src="@/assets/icons/linkedin.svg"
             alt="linkedin"

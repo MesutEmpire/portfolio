@@ -15,6 +15,7 @@
             <a
               class="text-slate-500 dark:text-gray"
               :href="store.getContactData.email"
+              target="_blank"
               >samwainaina01@gmail.com</a
             >
           </div>
@@ -26,21 +27,21 @@
         <div>
           <div class="font-medium text-2xl">Media</div>
           <div class="flex gap-2">
-            <a :href="store.getContactData.figma" class="w-8 aspect-square">
+            <a :href="store.getContactData.figma" target="_blank" class="w-8 aspect-square">
               <img
                 src="@/assets/icons/figma.svg"
                 alt="figma"
                 class="w-full aspect-square"
               />
             </a>
-            <a :href="store.getContactData.github" class="w-8 aspect-square">
+            <a :href="store.getContactData.github" target="_blank" class="w-8 aspect-square">
               <img
                 src="@/assets/icons/github.svg"
                 alt="github"
                 class="w-full aspect-square"
               />
             </a>
-            <a :href="store.getContactData.discord" class="w-8 aspect-square">
+            <a :href="store.getContactData.discord" target="_blank" class="w-8 aspect-square">
               <img
                 src="@/assets/icons/discord.svg"
                 alt="discord"
