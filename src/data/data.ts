@@ -16,6 +16,17 @@ export const factsData:string[] =
   ]
 export const projectsData:IProjects[]= [
     {
+        name: "Finder",
+        description: "This is a  machine learning model designed to revolutionize the process of apartment hunting by providing personalized recommendations tailored to each client's specific needs and preferences.",
+        technologies: ["Python", "Tensorflow"],
+        level: "small",
+        url: {
+            img: "",
+            live: "",
+            github: "https://github.com/MesutEmpire/Finder",
+        },
+    },
+    {
         name: "Kazi App",
         description: "The Kazi App is web application designed to connect service providers with clients. Clients can easily log in to the application, select the service they require, and find a suitable person to perform that service, offering convenience at their fingertips.\n" +
             "Service providers should be able to create a worker profile to showcase their skills in various industries. These profiles will be shared with clients when their skills are needed.\n",
@@ -157,6 +168,7 @@ export const skillsData:ISkills = {
       "C++",
       "Python",
       "Node js",
+        "Dart"
     ],
   },
   database: {
@@ -165,11 +177,11 @@ export const skillsData:ISkills = {
   },
   other: {
     category: "Other",
-    technologies: ["HTML", "CSS", "SCSS","Redux Toolkit","Tailwind CSS","Pinia","Docker","Github Actions","Azure"],
+    technologies: ["HTML", "CSS", "SCSS","Redux Toolkit","Tailwind CSS","Pinia","Docker","Github Actions","Azure","TensorFlow","Keras"],
   },
   frameworks: {
     category: "Frameworks",
-    technologies: ["Vue", "Angular", "Express","React"],
+    technologies: ["Vue", "Angular", "Express","React","Flutter","Dart Frog"],
   },
 };
 
