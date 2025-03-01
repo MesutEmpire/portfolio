@@ -52,7 +52,7 @@
         </div>
       </div>
       <div class="text-slate-500 dark:text-gray text-center">
-        © Copyright 2023. Made by Sam
+        © Copyright {{new Date().getFullYear()}}. Made by Sam
       </div>
     </div>
   </div>
