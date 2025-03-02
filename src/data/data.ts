@@ -201,5 +201,29 @@ export const quotesData:IQuote[] = [
     {
         quote:'" Anything that can go wrong will go wrong. "',
         quotedBy:' Edward A. Murphy Jr.'
+    },
+    {
+        quote: '"Do what you can, with what you have, where you are."',
+        quotedBy: 'Theodore Roosevelt'
+    },
+    {
+        quote: '"Success is not final, failure is not fatal: it is the courage to continue that counts."',
+        quotedBy: 'Winston Churchill'
+    },
+    {
+        quote: '"The only way to do great work is to love what you do."',
+        quotedBy: 'Steve Jobs'
+    },
+    {
+        quote: '"Opportunities don’t happen. You create them."',
+        quotedBy: 'Chris Grosser'
+    },
+    {
+        quote: '"The best way to predict the future is to invent it."',
+        quotedBy: 'Alan Kay'
+    },
+    {
+        quote: '"Perfection is not attainable, but if we chase perfection we can catch excellence."',
+        quotedBy: 'Vince Lombardi'
     }
 ]

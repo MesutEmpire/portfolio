@@ -8,8 +8,8 @@
     <div
       class="w-full grid gap-4 items-start mt-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
     >
-      <div v-for="project in store.getProjectsData" class="group transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 hover:line-clamp-none z-999">
-        <div v-if="project.level === 'decent'" class="border border-gray">
+      <div v-for="project in store.getProjectsData.filter((proj => proj.level === 'decent'))" class="group transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 hover:line-clamp-none z-999">
+        <div class="border border-gray">
           <img  v-if="project.url.img !== ''" :src="project.url.img" alt="" class="border-b aspect-video" />
 
           <ul
@@ -41,8 +41,8 @@
     <div
       class="w-full grid gap-4 items-start mt-12 grid-cols-1 sm:grid-cols-2 md:grid-cols-3"
     >
-      <div v-for="project in store.getProjectsData">
-        <div v-if="project.level === 'small'" class="border border-gray">
+      <div v-for="project in store.getProjectsData.filter((proj => proj.level === 'small'))">
+        <div class="border border-gray">
           <img
             v-if="project.url.img !== ''"
             :src="project.url.img"
